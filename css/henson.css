@@ -98,4 +98,11 @@ html[xmlns] .clearfix {
 
 body {
   font: 100% Helvetica, sans-serif;
-  color: #333333; }
+  color: #333333;
+  background-color: #202e33; }
+
+#footer {
+  border-width: 1px;
+  border-color: #ccc;
+  border-style: solid;
+  background-color: #06181e; }

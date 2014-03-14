@@ -3,8 +3,21 @@
 
 $font-stack:    Helvetica, sans-serif;
 $primary-color: #333;
+$primary-background-color: #202e33;
+$secondary-background-color: #06181e;
 
 body {
   font: 100% $font-stack;
   color: $primary-color;
+  background-color:$primary-background-color;
+}
+
+
+#footer {
+  border: {
+    width: 1px;
+    color: #ccc;
+    style: solid;
+  }
+  background-color:$secondary-background-color;
 }
