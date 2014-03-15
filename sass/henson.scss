@@ -21,7 +21,10 @@ body {
 	background-color:$primary-background-color;
 	#row1{
 		height:2px;
-		background-image: -webkit-gradient(linear, 10% 0%, 90% 0%, from(rgb(32, 46, 51)), color-stop(0.5, rgb(121, 173, 193)), to(rgb(32, 46, 51)));
+		background-color: #202e33;
+		@include filter-gradient(#202e33, #202e33, horizontal);
+		@include background-image(linear-gradient(left,  #202e33 0%,#79adc1 50%,#202e33 100%));
+
 	}
 	#row2{
 		height:10px;
