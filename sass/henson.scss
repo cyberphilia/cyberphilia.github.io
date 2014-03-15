@@ -1,13 +1,12 @@
-@import "normalize";
+@import "compass/reset";
+@import "compass";
+//@import "normalize";
 @import "html5bp";
 
-@mixin filter-gradient($start-color, $end-color, $orientation: vertical) {
-  @include has-layout;
-  $gradient-type: if($orientation == vertical, 0, 1);
-  @if $legacy-support-for-ie6 or $legacy-support-for-ie7 or $legacy-support-for-ie8 {
-    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=#{$gradient-type}, startColorstr='#{ie-hex-str($start-color)}', endColorstr='#{ie-hex-str($end-color)}');
-  }
-}
+
+
+
+
 
 $font-stack:    Helvetica,Arial,  sans-serif;
 $primary-color: #fff;
@@ -30,13 +29,10 @@ body {
 	#row1{
 		height:2px;
 		background-color: #202e33;
-		background: -moz-linear-gradient(left,  #202e33 0%, #7aadc1 50%, #202e33 100%);
-		background: -webkit-gradient(linear, left top, right top, color-stop(0%,#202e33), color-stop(50%,#7aadc1), color-stop(100%,#202e33));
-		background: -webkit-linear-gradient(left,  #202e33 0%,#7aadc1 50%,#202e33 100%);
-		background: -o-linear-gradient(left,  #202e33 0%,#7aadc1 50%,#202e33 100%);
-		background: -ms-linear-gradient(left,  #202e33 0%,#7aadc1 50%,#202e33 100%);
-		background: linear-gradient(to right,  #202e33 0%,#7aadc1 50%,#202e33 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#202e33', endColorstr='#202e33',GradientType=1 );
+		@include filter-gradient(#202e33, #202e33, horizontal);
+		@include background-image(linear-gradient(left,  #202e33 10%,#7aadc1 50%,#202e33 90%));
+
+
 	}
 	#row2{
 		height:10px;
@@ -63,5 +59,6 @@ body {
   		height:4px;
 		background-image: -webkit-gradient(linear, 10% 0%, 90% 0%, from(rgb(7, 153, 134)), color-stop(0.3, rgb(193, 225, 231)), color-stop(0.8, rgb(111, 186, 7)), to(rgb(7, 153, 134)));
   	}
+  	#test{background-color:#00ff00;}
 
 }
