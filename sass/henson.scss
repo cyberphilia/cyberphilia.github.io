@@ -1,23 +1,52 @@
-@import "reset";
-@import "clearfix";
+@import "normalize";
+@import "html5bp";
 
-$font-stack:    Helvetica, sans-serif;
-$primary-color: #333;
+$font-stack:    Helvetica,Arial,  sans-serif;
+$primary-color: #fff;
 $primary-background-color: #202e33;
 $secondary-background-color: #06181e;
 
 body {
-  font: 100% $font-stack;
-  color: $primary-color;
-  background-color:$primary-background-color;
+	font: 100% $font-stack;
+	color: $primary-color;
+	background-color:$primary-background-color;
 }
 
+#header{
+	height:126px;
+}
+
+#gradients{
+	height:72px;
+	background-color:$primary-background-color;
+	#row1{
+		height:2px;
+		background-image: -webkit-gradient(linear, 10% 0%, 90% 0%, from(rgb(32, 46, 51)), color-stop(0.5, rgb(121, 173, 193)), to(rgb(32, 46, 51)));
+	}
+	#row2{
+		height:10px;
+		background-image: -webkit-gradient(linear, 10% 0%, 90% 0%, from(rgb(7, 153, 134)), color-stop(0.3, rgb(193, 225, 231)), color-stop(0.8, rgb(111, 186, 7)), to(rgb(7, 153, 134)));
+	}
+	#row3{
+		height:50px;
+		background-image: -webkit-gradient(linear, 10% 0%, 90% 0%, from(rgb(170, 215, 0)), color-stop(0.3, rgb(146, 201, 14)), color-stop(0.5, rgb(170, 215, 0)), color-stop(0.6, rgb(146, 201, 14)), to(rgb(170, 215, 0)));
+	}
+	#row4{
+		height:4px;
+		background-color: #78960a;
+	}
+	#row5{
+		height:8px;
+		background-color:#2f3817;
+	}
+}
 
 #footer {
-  border: {
-    width: 1px;
-    color: #ccc;
-    style: solid;
-  }
-  background-color:$secondary-background-color;
+	height:120px;
+  	background-color:$secondary-background-color;
+  	#topbar{
+  		height:4px;
+		background-image: -webkit-gradient(linear, 10% 0%, 90% 0%, from(rgb(7, 153, 134)), color-stop(0.3, rgb(193, 225, 231)), color-stop(0.8, rgb(111, 186, 7)), to(rgb(7, 153, 134)));
+  	}
+
 }
