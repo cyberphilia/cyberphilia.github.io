@@ -739,7 +739,8 @@ body {
     background-image: url("/img/content_gradient.png");
     background-repeat: no-repeat;
     background-position: center bottom;
-    min-height: 320px; }
+    min-height: 320px;
+    height: auto; }
 
 footer {
   background-color: #06181e;
