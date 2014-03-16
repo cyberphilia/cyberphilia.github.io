@@ -742,11 +742,11 @@ h1, h2, h3, h4, h5 {
   #content_container #content {
     background-image: url("/img/content_gradient.png");
     background-repeat: no-repeat;
-    background-position: center bottom;
+    background-position: center top;
     text-align: left;
     padding: 0px;
     margin: 0 auto;
-    width: 900px;
+    width: 1200px;
     height: 100%; }
 
 footer {
