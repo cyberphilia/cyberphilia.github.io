@@ -678,6 +678,10 @@ textarea {
   h2,
   h3 {
     page-break-after: avoid; } }
+html {
+  position: relative;
+  min-height: 100%; }
+
 body {
   font: 100% Helvetica, Arial, sans-serif;
   color: white;
@@ -752,9 +756,9 @@ h1, h2, h3, h4, h5 {
 footer {
   background-color: #06181e;
   text-align: center;
-  /*position: absolute;*/
-  /*left: 0;*/
-  /*bottom: -100px;*/
+  position: absolute;
+  left: 0;
+  bottom: 0;
   height: 100px;
   width: 100%; }
   footer #topbar {

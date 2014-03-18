@@ -5,12 +5,15 @@ $font-stack:    Helvetica,Arial,  sans-serif;
 $primary-color: #fff;
 $primary-background-color: #202e33;
 $secondary-background-color: #06181e;
-
+html{
+	position: relative;
+    min-height: 100%;
+}
 body {
 	font: 100% $font-stack;
 	color: $primary-color;
 	background-color:$primary-background-color;
-	 margin: 0 0 100px; /* bottom = footer height */
+	margin: 0 0 100px; /* bottom = footer height */
 }
 h1,h2,h3,h4,h5{
 	color:#aad700;
@@ -92,9 +95,9 @@ h1,h2,h3,h4,h5{
 footer {
   	background-color:$secondary-background-color;
   	text-align: center;
-  	/*position: absolute;*/
-    /*left: 0;*/
-    /*bottom: -100px;*/
+  	position: absolute;
+    left: 0;
+    bottom: 0;
     height: 100px;
     width: 100%;
   	#topbar{
