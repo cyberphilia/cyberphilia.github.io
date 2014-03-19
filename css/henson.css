@@ -692,33 +692,51 @@ body {
 h1, h2, h3, h4, h5 {
   color: #aad700; }
 
-#header {
+#header_container {
   height: 126px;
   background-image: url("../img/header_gradient.png");
   background-repeat: no-repeat;
-  background-position: center bottom; }
-  #header #logo {
-    background-image: url("../img/hensonme.png");
-    background-repeat: no-repeat;
-    background-position: center left;
-    height: 100%;
-    width: 194px; }
-  #header nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none; }
-  #header nav li {
-    display: inline-block;
-    border-right-color: #58737c;
-    color: ffffff; }
-  #header nav a {
-    display: block;
-    padding: 6px 12px;
-    text-decoration: none;
-    background-color: #06181e;
-    color: ffffff; }
+  background-position: center bottom;
+  text-align: center; }
+  #header_container #header {
+    text-align: left;
+    padding: 0px;
+    margin: 0 auto;
+    width: 1200px;
+    height: 100%; }
+    #header_container #header #logo {
+      float: left;
+      background-image: url("../img/hensonme.png");
+      background-repeat: no-repeat;
+      background-position: center right;
+      height: 100%;
+      width: 360px; }
+    #header_container #header nav {
+      float: right;
+      height: 100px; }
+      #header_container #header nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        margin-top: 60px; }
+      #header_container #header nav li {
+        display: inline-block;
+        border-right-color: #58737c;
+        border-right-width: 2px;
+        border-right-style: solid;
+        color: ffffff;
+        margin-right: 10px; }
+      #header_container #header nav a {
+        display: block;
+        padding: 6px 12px;
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 20px; }
+      #header_container #header nav a:hover {
+        background-color: #06181e; }
 
 #gradients {
+  clear: both;
   height: 72px;
   background-color: #202e33; }
   #gradients #row1 {
