@@ -1,3 +1,3 @@
 cyberphilia.github.io
 =====================
-Testing github projet pages
+Testing github project pages
