@@ -205,6 +205,7 @@ h1,h2,h3,h4,h5{
 	line-height: 40px;
 	font-weight:bold;
 	background: #becf03;
+	color:#FFFFFF;
 	background: -moz-linear-gradient(top,  #becf03 1%, #f8fbc7 3%, #d1e800 5%, #7dc200 68%, #becf03 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#becf03), color-stop(3%,#f8fbc7), color-stop(5%,#d1e800), color-stop(68%,#7dc200), color-stop(100%,#becf03));
 	background: -webkit-linear-gradient(top,  #becf03 1%,#f8fbc7 3%,#d1e800 5%,#7dc200 68%,#becf03 100%);
@@ -220,8 +221,10 @@ h1,h2,h3,h4,h5{
 		background-position:left center; 
 		float: right;
 	}
+	a{
+		color:#FFFFFF;
+	}
 	
-
 	
 
 
