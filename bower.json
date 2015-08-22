@@ -1,0 +1,20 @@
+{
+  "name": "cyberphilia.github.io",
+  "version": "0.0.0",
+  "homepage": "https://github.com/cyberphilia/cyberphilia.github.io",
+  "authors": [
+    "Jacob Henson"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass-official": "~3.3.5",
+    "fontawesome": "~4.4.0"
+  }
+}
