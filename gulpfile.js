@@ -19,6 +19,10 @@ gulp.task('icons', function() {
     return gulp.src(config.bowerDir + '/fontawesome/fonts/**.*')
         .pipe(gulp.dest('./public/fonts'));
 });
+gulp.task('images', function() {
+    return gulp.src('./resources/img/**.*')
+        .pipe(gulp.dest('./public/img'));
+});
 
 
 // gulp.task('css', function() {
@@ -41,7 +45,7 @@ gulp.task('sass', function() {
 
 // Lint Task
 gulp.task('lint', function() {
-    return gulp.src('js/*.js')
+    return gulp.src('./public/js/all.min.js')
         .pipe(jshint())
         .pipe(jshint.reporter('default'));
 });
@@ -62,9 +66,10 @@ gulp.task('bootstrap_scripts', function() {
 
 // Watch Files For Changes
 gulp.task('watch', function() {
-    gulp.watch('./resources/js/*.js', ['lint', 'scripts','bootstrap_scripts']);
+    gulp.watch('./resources/js/henson.js', ['lint', 'scripts','bootstrap_scripts']);
     gulp.watch('./resources/scss/mine.scss', ['sass']);
+    gulp.watch('./resources/img/*.*', ['images']);
 });
 
 // Default Task
-gulp.task('default', ['icons','sass','scripts', 'watch']);
+gulp.task('default', ['icons','sass','scripts','images', 'watch']);
