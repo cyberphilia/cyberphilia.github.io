@@ -22,6 +22,12 @@ body {
    height: 100%;
 }
 
+.navbar{
+    border: 0px;
+}
+.navbar-brand{
+    padding-top:25px;
+}
 
 .navbar-fixed-top {
     background-image:url("../img/header_gradient.png");
@@ -32,25 +38,29 @@ body {
 
 .outer_container{
 
-    background-image:url("../img/content_background.png");
-    background-repeat:repeat-x;
-    background-position:center top; 
-    padding-top:$navbar-height - 60;
+    // background-image:url("../img/content_background.png");
+    // background-repeat:repeat-x;
+    // background-position:center top; 
+    // padding-top:$navbar-height - 60;
+    //margin-top:57px;
+    margin-top:0;
+    background:
+        url("../img/content_gradient.png") center top no-repeat,
+        url("../img/content_background.png") center top repeat-x;
 }
 
-.navbar-brand{
-    padding-top:25px;
 
-}
+
 .jumbotron{
     background-color:rgba(6, 24, 30, 0.65);
 }
 
 #gradients{
     clear:both;
-    height:72px;
+    height:64px;
     background-color:$body-bg;
     margin:0;
+    margin-top:$navbar-height;
     #row1{
         height:2px;
         background: #202e33;
@@ -91,7 +101,7 @@ body {
         background-color: #78960a;
     }
     #row5{
-        height:8px;
+        height:0px;
         background-color:#2f3817;
     }
 }
