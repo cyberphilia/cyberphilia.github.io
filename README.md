@@ -1,3 +1,12 @@
 cyberphilia.github.io
 =====================
-Testing github project pages
+
+### Setup Environment
+
+- Navigate to the this directory
+- vagrant up
+- vagrant ssh
+- cd /vagrant
+- npm install
+- bower install
+- gulp
