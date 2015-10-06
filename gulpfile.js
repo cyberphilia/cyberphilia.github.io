@@ -7,6 +7,7 @@ var jshint = require('gulp-jshint');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
+var htmlreplace = require('gulp-html-replace');;
 //var bower = require('gulp-bower');
 
 var config = {
@@ -70,6 +71,17 @@ gulp.task('watch', function() {
     gulp.watch('./resources/scss/mine.scss', ['sass']);
     gulp.watch('./resources/img/*.*', ['images']);
 });
+
+// dist
+gulp.task('dist', function() {
+    gulp.src('index.html')
+    .pipe(htmlreplace({
+        'css': 'styles.min.css',
+        'js': 'js/bundle.min.js'
+    }))
+    .pipe(gulp.dest('build/'));
+});
+
 
 // Default Task
 gulp.task('default', ['icons','sass','scripts','images', 'watch']);
