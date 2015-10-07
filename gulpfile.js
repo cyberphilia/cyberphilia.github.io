@@ -7,14 +7,14 @@ var jshint = require('gulp-jshint');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
-var htmlreplace = require('gulp-html-replace');;
+var htmlreplace = require('gulp-html-replace');
 //var bower = require('gulp-bower');
 
 var config = {
     sassPath: './resources/sass',
     bowerDir: './bower_components',
     publicDir: './public'
-}
+};
 
 gulp.task('icons', function() {
     return gulp.src(config.bowerDir + '/fontawesome/fonts/**.*')
@@ -64,23 +64,31 @@ gulp.task('bootstrap_scripts', function() {
         .pipe(gulp.dest('./public/js/'));
 });
 
+gulp.task('angular_scripts', function() {
+    return gulp.src([config.bowerDir + '/angular/angular.min.js'])
+        .pipe(gulp.dest('./public/js/'));
+});
+
 
 // Watch Files For Changes
 gulp.task('watch', function() {
-    gulp.watch('./resources/js/henson.js', ['lint', 'scripts','bootstrap_scripts']);
+    gulp.watch('./resources/js/henson.js', ['lint', 'scripts','bootstrap_scripts','angular_scripts']);
     gulp.watch('./resources/scss/mine.scss', ['sass']);
     gulp.watch('./resources/img/*.*', ['images']);
 });
 
 // dist
-gulp.task('dist', function() {
-    gulp.src('index.html')
-    .pipe(htmlreplace({
-        'css': 'styles.min.css',
-        'js': 'js/bundle.min.js'
-    }))
-    .pipe(gulp.dest('build/'));
-});
+// gulp.task('dist', function() {
+//     // gulp.src('index.html')
+//     // .pipe(htmlreplace({
+//     //     'css': 'styles.min.css',
+//     //     'js': 'js/bundle.min.js'
+//     // }))
+//     // .pipe(gulp.dest('build/'));
+
+// });
+
+
 
 
 // Default Task
