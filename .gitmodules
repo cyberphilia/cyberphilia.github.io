@@ -1,0 +1,3 @@
+[submodule "themes/hensonme.hugo.theme"]
+	path = themes/hensonme.hugo.theme
+	url = https://github.com/cyberphilia/hensonme.hugo.theme.git
