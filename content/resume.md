@@ -6,6 +6,10 @@ draft: true
 
 ## Jacob Henson, CISSP
 
+### Profile 
+
+Experienced IT leader with a proven history of delivering solutions and implementing risk management governance and strategies.  I am passionate about solving problems and enabling business needs.   I have years of experience working with multiple compliance standards like NIST SP 800-171, ISO 20,000, CIS Top 20, and NIST Cybersecurity Framework.
+
 ### Education
 
 
