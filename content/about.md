@@ -1,30 +1,12 @@
 ---
-title: "About"
+title: "About Me"
 date: 2017-12-01T21:28:26-06:00
 draft: true
 slug: "about me"
 ---
 
-Experienced IT leader with a proven history of delivering solutions and implementing risk management governance and strategies.  I am passionate about solving problems and enabling business needs.   I have years of experience working with multiple compliance standards like NIST SP 800-171, ISO 20,000, CIS Top 20, and NIST Cybersecurity Framework.
-
-![Example image](/img/mal.jpg)
+**IT leader with more than 15 years of IT experience leading teams and managing projects.**  I am known for being focused, calm, and level-headed.  A proven history of project-oriented development, governance, risk management, and strategies developed to meet the needs of a growing business.  I have years of experience working with multiple compliance standards like NIST SP 800-171, ISO 20,000, CIS Top 20, and NIST Cybersecurity Framework.   I have experience with IT due diligence and IT integration of mergers and acquisitions.  I am most passionate about solving problems and improving processes.
 
 
-{{< highlight ruby>}}
-require 'redcarpet'
-markdown = Redcarpet.new("Hello World!")
-puts markdown.to_html
-{{< /highlight >}}
-
-{{< highlight html >}}
-<section id="main">
-  <div>
-    <h1 id="title">{{ .Title }}</h1>
-    {{ range .Data.Pages }}
-      {{ .Render "summary"}}
-    {{ end }}
-  </div>
-</section>
-{{< /highlight >}}
 
 <div style="height:600px"></div>

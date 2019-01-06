@@ -30,3 +30,23 @@ Open Source
     implemented multithreading over a long weekend, or **node.js**
     (with [link](http://nodejs.org)) which was actually totally
     your idea...
+
+![Example image](/img/mal.jpg)
+
+
+{{< highlight ruby>}}
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+{{< /highlight >}}
+
+{{< highlight html >}}
+<section id="main">
+  <div>
+    <h1 id="title">{{ .Title }}</h1>
+    {{ range .Data.Pages }}
+      {{ .Render "summary"}}
+    {{ end }}
+  </div>
+</section>
+{{< /highlight >}}

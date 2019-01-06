@@ -23,8 +23,4 @@ sectionPagesMenu = "main"
     identifier = "posts"
     url = "/posts/"
 
-[[menu.main]]
-    name = "About Me"
-    weight = 2
-    identifier = "about-me"
-    url = "/about-me/"
+
